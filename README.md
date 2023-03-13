@@ -17,5 +17,4 @@ Task B. Virtualization & Operating System
 
 =======================================================================
 
-Task C. VMware
-tugas dilampirkan pada LMS dumbways.id
+Task C. VMware (tugas dilampirkan pada LMS dumbways.id)
