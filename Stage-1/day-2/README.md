@@ -13,11 +13,11 @@ Task A. Linux Shell
 3. Command basic linux shell
 <br>![image](https://user-images.githubusercontent.com/52950376/225167441-f2c0a1d3-b510-4517-bb2d-7a5df6be87be.png)
 <br>
-> mkdir adalah perintah untuk membuat suatu directory. Sebagai contoh saya buat suatu directory dengan nama devops.
-> ls adalah perintah untuk melihat list apa saja yang ada di directory.
-> touch adalah perintah untuk membuat suatu file. Sebagai contoh saya buat suatu file dengan nama file1.
-> cp adalah perintah untuk meng-copy file serta mengubahnya dengan nama yang kalian inginkan. Sebagai contoh saya copy file1 dengan nama file2.
-> rm adalah perintah untuk menghapus suatu directory.
+<br>> mkdir adalah perintah untuk membuat suatu directory. Sebagai contoh saya buat suatu directory dengan nama devops.
+<br>> ls adalah perintah untuk melihat list apa saja yang ada di directory.
+<br>> touch adalah perintah untuk membuat suatu file. Sebagai contoh saya buat suatu file dengan nama file1.
+<br>> cp adalah perintah untuk meng-copy file serta mengubahnya dengan nama yang kalian inginkan. Sebagai contoh saya copy file1 dengan nama file2.
+<br>> rm adalah perintah untuk menghapus suatu directory.
 
 ========================================================
 
