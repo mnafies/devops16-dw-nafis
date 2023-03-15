@@ -1,0 +1,7 @@
+Localtunnel
+
+install localtunnel dengan perintah 'npm install -g localtunnel'
+
+menjalankan nodejs melalui localtunnel gunakan perintah 'node [nama aplikasi]' lalu jalankan localtunnel dengan port 3000 'lt --port 3000'
+
+menjalankan python melalui localtunnel gunakan perintah 'python3 [nama aplikasi]' lalu jalankan localtunnel dengan port 5000 'lt --port 5000'
