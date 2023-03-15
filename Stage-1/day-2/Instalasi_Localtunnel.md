@@ -17,3 +17,6 @@ Langkah pertama lakukan instalasi node.js menggunakan nvm
 <br>klik Click to Continue
 <br>![image](https://user-images.githubusercontent.com/52950376/225170627-3175daae-afca-4895-bf02-763b543dd1ca.png)
 <br>dan ip server sudah bisa diakses melalui public
+
+dibawah ini contoh berhasil mengakses server melalui jaringan berbeda 
+<br>![image](https://user-images.githubusercontent.com/52950376/225171306-d752696e-55d1-482e-ae28-ee2f1aa220f4.png)
