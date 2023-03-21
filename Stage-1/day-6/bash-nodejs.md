@@ -6,4 +6,4 @@ Challenge
 
 2. Menjalankan Nodejs dengan ufw 
 terlebih dahulu memasukan izin port 3000 pada ufw dengan perintah 'sudo ufw allow 3000'
-![image](https://user-images.githubusercontent.com/52950376/226648226-b0644cee-7f08-4fe8-bbcb-983943a200f7.png)
+![image](https://user-images.githubusercontent.com/52950376/226648680-98962be5-0731-4fd5-b2db-b0524528b22b.png)
