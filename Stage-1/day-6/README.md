@@ -34,6 +34,7 @@ Task A. Monitoring
 - S : Proses State (R = runable, S = sleep)
 
 2. menampilkan status CPU, RAM & Network
+gunakan perintah "nmon c m n"
 ![image](https://user-images.githubusercontent.com/52950376/226639826-9bc4a293-6ccb-48a1-b33b-f23d34fcf7f5.png)
 
 
