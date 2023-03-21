@@ -16,3 +16,24 @@ Task A. BASH
   ![image](https://user-images.githubusercontent.com/52950376/226490791-59e05501-afd7-4501-90ab-e7cf08222d0a.png)
   ![image](https://user-images.githubusercontent.com/52950376/226491126-80194d15-c96a-4701-af8e-64109695ae27.png)
 ![image](https://user-images.githubusercontent.com/52950376/226491303-ed7e6f77-0c7a-4296-a0ea-f490ac5d6cf1.png)
+
+=================================================
+
+Task A. Monitoring
+
+1. htop
+
+![image](https://user-images.githubusercontent.com/52950376/226638659-7c21e0a3-aae1-4e51-a89c-18439a4376c2.png)
+- PID : Process ID
+- USER : Prosess Owner
+- PRI : Process Priority
+- NI : User Space
+- VIRT : Virtual Memory
+- RES : Memory Usage
+- SHR : Shared Memory
+- S : Proses State (R = runable, S = sleep)
+
+2. menampilkan status CPU, RAM & Network
+![image](https://user-images.githubusercontent.com/52950376/226639826-9bc4a293-6ccb-48a1-b33b-f23d34fcf7f5.png)
+
+
