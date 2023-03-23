@@ -20,7 +20,7 @@
 ##### kemudian pada local host tambahkan pada conf `sudo nano /etc/hosts` ip dan domain local server
 ![image](https://user-images.githubusercontent.com/52950376/226770354-79c37138-e742-497f-8d2c-046ad6b4785d.png)
 
-##### kemudian untuk virtual domain edit hosts pada folder windows C:\Windows\System32\drivers\etc
+##### kemudian untuk virtual domain edit hosts pada folder windows `C:\Windows\System32\drivers\etc`
 ![image](https://user-images.githubusercontent.com/52950376/226776161-47521fec-a8ad-44a1-bcbe-77fd80dc3fc8.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/226776500-4cd6678d-7997-4c1d-8fd3-cc6cb935fc89.png)
