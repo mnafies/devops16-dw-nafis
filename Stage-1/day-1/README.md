@@ -68,7 +68,8 @@ Pada bagian network kita pilih manual untuk mengatur pada bagian IP Address
 \
 ![image](https://user-images.githubusercontent.com/52950376/224873179-3275a2bf-1d80-4578-8235-20dc06440884.png)
 ~~~
-Silahkan untuk menyesuaikan dengan IP Address dan Gateway yang sedang terpakai pada local network, tentunya yang terhubung dengan internet
+Silahkan untuk menyesuaikan dengan IP Address dan Gateway yang sedang terpakai pada local network, 
+tentunya yang terhubung dengan internet
 ~~~
 \
 \
