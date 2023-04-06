@@ -17,6 +17,11 @@ pembuatan password terlebih dahulu menggunakan alter user
 
 ![image](https://user-images.githubusercontent.com/52950376/230390031-42bd2816-33cd-4856-9e1d-c7e78ca89269.png)
 ![image](https://user-images.githubusercontent.com/52950376/230390386-cfd74766-27ad-4483-9d92-c12dfc3e9dc9.png)
+pembuatan user 'nafis'
+![image](https://user-images.githubusercontent.com/52950376/230404464-a861d707-a2df-4ea6-a2d8-7db389ba2d1a.png)
+![image](https://user-images.githubusercontent.com/52950376/230406303-a6432081-26b7-4aa8-8337-a8e967d4e155.png)
+
+
 
 server gateway
 ![image](https://user-images.githubusercontent.com/52950376/230392856-f1a75abd-e5ce-4e59-85e6-06dce1b8e9a2.png)
@@ -25,3 +30,33 @@ server gateway
 ![image](https://user-images.githubusercontent.com/52950376/230395730-a9dfd4fd-069d-471d-be50-79227d722a8d.png)
 ![image](https://user-images.githubusercontent.com/52950376/230396086-e090dee4-fe0c-4420-9795-dc08635f2dfb.png)
 ![image](https://user-images.githubusercontent.com/52950376/230396275-0604e063-b5b3-44bb-95ce-7724a9d8b3a3.png)
+
+pm2 ecosystem
+![image](https://user-images.githubusercontent.com/52950376/230396944-05941d55-3f03-4e77-b1c1-db341d0345d3.png)
+![image](https://user-images.githubusercontent.com/52950376/230397071-6d15f461-da40-4ed1-bf3e-21b55b9fac82.png)
+![image](https://user-images.githubusercontent.com/52950376/230397501-8fc5188e-b715-43f6-a832-661f52fdaca3.png)
+
+test dns
+![image](https://user-images.githubusercontent.com/52950376/230397806-475ec8ab-9955-47de-8c7f-5f95bfb76833.png)
+![image](https://user-images.githubusercontent.com/52950376/230397867-ebe1dd8e-df6e-487f-bc64-c1c293c4fba2.png)
+
+integrasi frontend backend sql
+![image](https://user-images.githubusercontent.com/52950376/230398626-5ce569c6-07e4-4c3a-bd4a-3a7b2f6639be.png)
+![image](https://user-images.githubusercontent.com/52950376/230398846-085be601-87ca-4359-8db1-ac8e6376b0ba.png)
+![image](https://user-images.githubusercontent.com/52950376/230399099-da23a3c2-c3b1-4706-b956-aef3942f6485.png)
+![image](https://user-images.githubusercontent.com/52950376/230400280-e2077ee5-8353-4480-a402-d000dcf482e7.png)
+
+backend to sql
+![image](https://user-images.githubusercontent.com/52950376/230399989-642b4c3a-fdd8-4c15-8386-19275c22ed49.png)
+
+membuat database sql
+![image](https://user-images.githubusercontent.com/52950376/230406596-ff06ee8e-d732-4dfa-91bf-171950e558f0.png)
+
+membuat database untuk backend
+![image](https://user-images.githubusercontent.com/52950376/230407086-21642977-bfb8-45bd-ae9f-95f356deba97.png)
+![image](https://user-images.githubusercontent.com/52950376/230407566-e2b4607e-49b5-4635-90bf-1e1cc4464ea2.png)
+![image](https://user-images.githubusercontent.com/52950376/230407912-9095f41b-7d72-4cd0-bcd3-f34dacbc2a9d.png)
+ 
+test dengan buat user account wayshub
+![image](https://user-images.githubusercontent.com/52950376/230408750-a683c116-e540-42b1-951f-63800aaf7c72.png)
+
