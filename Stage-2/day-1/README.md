@@ -42,7 +42,7 @@ test dns
 
 integrasi frontend backend sql
 ![image](https://user-images.githubusercontent.com/52950376/230398626-5ce569c6-07e4-4c3a-bd4a-3a7b2f6639be.png)
-![image](https://user-images.githubusercontent.com/52950376/230398846-085be601-87ca-4359-8db1-ac8e6376b0ba.png)
+![image](https://user-images.githubusercontent.com/52950376/230520935-1482a65b-bd33-42ff-a0f1-8d0c27b688da.png)
 ![image](https://user-images.githubusercontent.com/52950376/230399099-da23a3c2-c3b1-4706-b956-aef3942f6485.png)
 ![image](https://user-images.githubusercontent.com/52950376/230400280-e2077ee5-8353-4480-a402-d000dcf482e7.png)
 
