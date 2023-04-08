@@ -141,7 +141,7 @@ SHOW TABLES;
 #### setelah itu saya menambahkan pengaturan reverse proxy pada `/etc/nginx/sites-enabled/`
 ![image](https://user-images.githubusercontent.com/52950376/230394429-1f006614-8f18-4d80-8a6b-d9edc187c7a2.png)
 
-#### lalu buat file proxy untuk frontend dengan isi 
+#### lalu buat file `rproxyfe.conf` untuk frontend dengan isi 
 ~~~
 server { 
     server_name nafis.stundentdumbways.my.id; 
@@ -153,7 +153,7 @@ server {
 ~~~
 ![image](https://user-images.githubusercontent.com/52950376/230395730-a9dfd4fd-069d-471d-be50-79227d722a8d.png)
 
-#### lalu buat file proxy untuk backend dengan isi 
+#### lalu buat file `rproxybe.conf` untuk backend dengan isi 
 ~~~
 server { 
     server_name api.nafis.stundentdumbways.my.id; 
