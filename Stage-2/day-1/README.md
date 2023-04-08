@@ -1,4 +1,16 @@
-# Deploy Wayshub
+# Challenge SSL w/ Certbot
+#### Pertama install certbot dengan perintah `sudo snap install --classic certbot` & `sudo ln -s /snap/bin/certbot /usr/bin/certbot
+`
+![image](https://user-images.githubusercontent.com/52950376/230744728-7020f2b6-c929-428a-ba84-9941bc5c49a8.png)
+
+#### masuk pada directory `/etc/nginx/sites-enabled`
+![image](https://user-images.githubusercontent.com/52950376/230744755-d5ff2f77-63e2-4a2a-9f3d-eb4072a09f7e.png)
+
+#### kemudian pasang certbot dengan perintah `sudo certbot --nginx`
+![image](https://user-images.githubusercontent.com/52950376/230745491-439806c2-372f-4aed-8469-551e9a77941a.png)
+
+
+# 1. Deploy Wayshub
 
 #### Pertama, membuat vm pada idcloudhost dengan spesifikasi sebagai berikut
 ~~~
@@ -130,7 +142,7 @@ SHOW TABLES;
 ![image](https://user-images.githubusercontent.com/52950376/230407912-9095f41b-7d72-4cd0-bcd3-f34dacbc2a9d.png)
  
 
-## Server gateway
+# 2. Gateway NGiNX
 #### disini saya membuat dns pada cloudflare dengan alamat 
 #### `nafis.stundentdumbways.my.id` (frontend) dan `api.nafis.stundentdumbways.my.id` (backend)
 ![image](https://user-images.githubusercontent.com/52950376/230393676-bfaaa9fc-5d14-4e74-9759-f3f7e075d095.png)
