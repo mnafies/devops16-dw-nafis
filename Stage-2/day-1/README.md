@@ -60,21 +60,46 @@ GRANT ALL PRIVILEDGES ON *.* TO 'nafis'@'%' WITH GRANT OPTION;
 ![image](https://user-images.githubusercontent.com/52950376/230390031-42bd2816-33cd-4856-9e1d-c7e78ca89269.png)
 
 ## pm2 ecosystem
-![image](https://user-images.githubusercontent.com/52950376/230396944-05941d55-3f03-4e77-b1c1-db341d0345d3.png)
-![image](https://user-images.githubusercontent.com/52950376/230397071-6d15f461-da40-4ed1-bf3e-21b55b9fac82.png)
+#### disini saya akan membuat pm2 ecosystem pada directory wayshub-frontend 
+#### dan wayshub-backend dengan perintah `pm2 ecosystem simple`
+#### lalu edit script ecosystem.config.js 
+~~~
+wayshub-frontend
+name  : "frontend",
+script: "npm start"
+~~~
+~~~
+wayshub-backend
+name  : "backend",
+script: "npm start"
+~~~
+
+#### setelah itu coba jalankan `pm2 start` pada setiap directorynya
+![image](https://user-images.githubusercontent.com/52950376/230396944-05941d55-3f03-4e77-b1c1-db341d0345d3.png) <br>
+![image](https://user-images.githubusercontent.com/52950376/230397071-6d15f461-da40-4ed1-bf3e-21b55b9fac82.png) <br>
 ![image](https://user-images.githubusercontent.com/52950376/230397501-8fc5188e-b715-43f6-a832-661f52fdaca3.png)
 
-## Test dns
-![image](https://user-images.githubusercontent.com/52950376/230397806-475ec8ab-9955-47de-8c7f-5f95bfb76833.png)
-![image](https://user-images.githubusercontent.com/52950376/230397867-ebe1dd8e-df6e-487f-bc64-c1c293c4fba2.png)
-
-## Integrasi frontend backend sql
-![image](https://user-images.githubusercontent.com/52950376/230398626-5ce569c6-07e4-4c3a-bd4a-3a7b2f6639be.png)
+## Integrasi frontend to backend
+#### untuk integrasi frontend ke backend edit file `api.js` pada directory `wayshub/wayshub-frontend/src/config/`
+~~~
+baseURL "http://api.nafis.stundentdumbways.my.id/api/v1"
+~~~
+![image](https://user-images.githubusercontent.com/52950376/230398626-5ce569c6-07e4-4c3a-bd4a-3a7b2f6639be.png) <br>
 ![image](https://user-images.githubusercontent.com/52950376/230520935-1482a65b-bd33-42ff-a0f1-8d0c27b688da.png)
+
+## Integrasi backend to sql
+#### untuk integrasi backend ke mysql edit file `config.json` pada directory `wayshub/wayshub-backend/config/`
+~~~
+"username"  : "nafis",
+"password"  : "nafis111",
+"database"  : "wayshub",
+"host"      : "127.0.0.1"
+"dialect"   : "mysql"
+~~~
 ![image](https://user-images.githubusercontent.com/52950376/230399099-da23a3c2-c3b1-4706-b956-aef3942f6485.png)
 ![image](https://user-images.githubusercontent.com/52950376/230400280-e2077ee5-8353-4480-a402-d000dcf482e7.png)
 
-## Backend to sql
+## Sequelize
 ![image](https://user-images.githubusercontent.com/52950376/230399989-642b4c3a-fdd8-4c15-8386-19275c22ed49.png)
 
 ## Membuat database sql
@@ -100,4 +125,9 @@ GRANT ALL PRIVILEDGES ON *.* TO 'nafis'@'%' WITH GRANT OPTION;
 ![image](https://user-images.githubusercontent.com/52950376/230497575-b82387d2-f403-4a97-823b-a7db80305d8e.png)
 ![image](https://user-images.githubusercontent.com/52950376/230497692-6b49d4fd-0935-41ab-8890-9659fafe4d54.png)
 ![image](https://user-images.githubusercontent.com/52950376/230521236-452b7356-88de-40f8-aad1-5082999e2503.png)
+
+
+## Test dns
+![image](https://user-images.githubusercontent.com/52950376/230397806-475ec8ab-9955-47de-8c7f-5f95bfb76833.png)
+![image](https://user-images.githubusercontent.com/52950376/230397867-ebe1dd8e-df6e-487f-bc64-c1c293c4fba2.png)
 
