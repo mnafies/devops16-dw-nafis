@@ -63,7 +63,7 @@ atau
 CREATE USER 'nafis'@'%' IDENTIFIED BY 'nafis111';
 ~~~
 ~~~
-GRANT ALL PRIVILEDGES ON *.* TO 'nafis'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'nafis'@'%' WITH GRANT OPTION;
 ~~~
 ![image](https://user-images.githubusercontent.com/52950376/230404464-a861d707-a2df-4ea6-a2d8-7db389ba2d1a.png) <br>
 ![image](https://user-images.githubusercontent.com/52950376/230406303-a6432081-26b7-4aa8-8337-a8e967d4e155.png)
