@@ -74,6 +74,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'nafis'@'%' WITH GRANT OPTION;
 ## pm2 ecosystem
 #### disini saya akan membuat pm2 ecosystem pada directory wayshub-frontend 
 #### dan wayshub-backend dengan perintah `pm2 ecosystem simple`
+
+![image](https://user-images.githubusercontent.com/52950376/230396944-05941d55-3f03-4e77-b1c1-db341d0345d3.png)
+
 #### lalu edit script ecosystem.config.js 
 ~~~
 wayshub-frontend
@@ -85,7 +88,6 @@ wayshub-backend
 name  : "backend",
 script: "npm start"
 ~~~
-![image](https://user-images.githubusercontent.com/52950376/230396944-05941d55-3f03-4e77-b1c1-db341d0345d3.png)
 
 #### setelah itu coba jalankan `pm2 start` pada setiap directorynya
 ![image](https://user-images.githubusercontent.com/52950376/230397071-6d15f461-da40-4ed1-bf3e-21b55b9fac82.png) <br>
