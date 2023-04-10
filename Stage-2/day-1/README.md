@@ -7,7 +7,10 @@
 ![image](https://user-images.githubusercontent.com/52950376/230744755-d5ff2f77-63e2-4a2a-9f3d-eb4072a09f7e.png)
 
 #### kemudian pasang certbot dengan perintah `sudo certbot --nginx`
-![image](https://user-images.githubusercontent.com/52950376/230745491-439806c2-372f-4aed-8469-551e9a77941a.png)
+![image](https://user-images.githubusercontent.com/52950376/230864798-18c09577-5659-4a77-bac2-2b26f26bc38d.png) <br>
+![image](https://user-images.githubusercontent.com/52950376/230864930-1349a113-8b94-4e13-9a17-fb017db9d9d1.png)
+
+
 
 
 # 1. Deploy Wayshub
