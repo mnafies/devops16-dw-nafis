@@ -109,12 +109,12 @@ baseURL "http://api.nafis.stundentdumbways.my.id/api/v1"
 ~~~
 "username"  : "nafis",
 "password"  : "nafis111",
-"database"  : "wayshub",
+"database"  : "db-wayshub",
 "host"      : "127.0.0.1"
 "dialect"   : "mysql"
 ~~~
 ![image](https://user-images.githubusercontent.com/52950376/230399099-da23a3c2-c3b1-4706-b956-aef3942f6485.png)
-![image](https://user-images.githubusercontent.com/52950376/230400280-e2077ee5-8353-4480-a402-d000dcf482e7.png)
+![image](https://user-images.githubusercontent.com/52950376/231581761-792e850d-17e4-40a8-b6dc-ee058fe5b387.png)
 
 ## Sequelize
 #### install npm sequelize pada directory backend dengan perintah
@@ -138,13 +138,12 @@ kemudian cek pada sql apakah database wayshub sudah terbuat
 SHOW DATABASES;
 ~~~
 ~~~
-USE wayshub;
+USE db-wayshub;
 ~~~
 ~~~
 SHOW TABLES;
 ~~~
-![image](https://user-images.githubusercontent.com/52950376/230406596-ff06ee8e-d732-4dfa-91bf-171950e558f0.png) <br>
-![image](https://user-images.githubusercontent.com/52950376/230407912-9095f41b-7d72-4cd0-bcd3-f34dacbc2a9d.png)
+![image](https://user-images.githubusercontent.com/52950376/231587909-df0d3cd7-4554-4b5b-ac15-4cb68df5ccea.png)
  
 
 # 2. Gateway NGiNX
