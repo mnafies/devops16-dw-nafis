@@ -130,7 +130,7 @@ sequelize db:create
 ~~~
 sequelize db:migrate
 ~~~
-![image](https://user-images.githubusercontent.com/52950376/230407086-21642977-bfb8-45bd-ae9f-95f356deba97.png) <br>
+![image](https://user-images.githubusercontent.com/52950376/231588239-6236e2df-2a7d-4af8-b224-0629a27803f7.png) <br>
 ![image](https://user-images.githubusercontent.com/52950376/230407566-e2b4607e-49b5-4635-90bf-1e1cc4464ea2.png)
 
 kemudian cek pada sql apakah database wayshub sudah terbuat
