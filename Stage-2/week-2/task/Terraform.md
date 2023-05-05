@@ -1,12 +1,15 @@
+```
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
+```
 
 ![image](https://user-images.githubusercontent.com/52950376/236508484-8da8ff8c-fc65-4f84-8db2-6e47405d9c21.png)
 ![image](https://user-images.githubusercontent.com/52950376/236508663-6da391aa-b1d4-482f-bb98-a7589dde6769.png)
 ![image](https://user-images.githubusercontent.com/52950376/236513027-81e557e6-ae2d-4ab9-87d9-f50f0cf7ffe5.png)
 
-```terraform {
+```
+terraform {
   required_providers {
     idcloudhost = {
       source = "bapung/idcloudhost"
