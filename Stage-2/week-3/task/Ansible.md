@@ -1,0 +1,165 @@
+`python3 -m pip -V`
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+```
+
+![image](https://user-images.githubusercontent.com/52950376/236621563-c9d8f97a-7762-429c-bf13-ec9458eb02f8.png)
+
+```
+python3 -m pip install --user ansible
+```
+![image](https://user-images.githubusercontent.com/52950376/236621657-367dfc2f-0d77-479f-a98c-ebabaa874a36.png)
+
+`ansible --version`
+`sudo cp .local/bin/ansible /usr/local/bin`
+![image](https://user-images.githubusercontent.com/52950376/236621717-24854864-d1be-4671-8d02-1cac9d22a563.png)
+
+![image](https://user-images.githubusercontent.com/52950376/236625006-89df53e0-a0ae-40c6-ae36-3f99a8b47dfe.png)
+
+
+```
+[defaults]
+inventory = Inventory
+private_key_file = ~/.ssh/id_rsa
+host_key_checking = false
+interpreter_python = auto_silent
+```
+
+```
+[all]
+103.49.239.40
+103.139.193.91
+103.23.199.42
+
+[appserver]
+103.49.239.40
+
+[gateway]
+103.139.193.91
+
+[monitoring]
+103.23.199.42
+
+[all:vars]
+ansible_user="nafis"
+ansible_pythone_interpreter=/usr/bin/python3
+```
+[add_user]
+
+![image](https://user-images.githubusercontent.com/52950376/236625768-86e4b7a3-bd00-486b-ba1a-483fb7f6355e.png)
+```
+- become: true
+  gather_facts: false
+  hosts: all      
+  vars:
+   - username: "devops"
+   - password: "$5$65Cdft2l3J/LIY7d$evc4M4CzKfvO4Xaht8VW7qXd7e4nUUeJO9wDIUaIVk5" #Nafis111
+
+  tasks:
+    - name: "Creating User"
+      ansible.builtin.user:
+        groups: sudo
+        name: "{{username}}"
+        password: "{{password}}"
+```
+![image](https://user-images.githubusercontent.com/52950376/236627226-34ca326c-7af6-415b-babd-c10e78cdad0d.png)
+
+![image](https://user-images.githubusercontent.com/52950376/236626350-925c44d0-f0aa-47dd-a60d-69f0f2d92c47.png)
+
+[appserver]
+install-docker.yml
+```
+---
+- hosts: all
+  become: true
+  vars:
+    container_count: 4
+    default_container_name: docker
+    default_container_image: ubuntu
+    default_container_command: sleep 1d
+
+  tasks:
+    - name: Install aptitude
+      apt:
+        name: aptitude
+        state: latest
+        update_cache: true
+
+    - name: Install required system packages
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools
+        state: latest
+        update_cache: true
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: true
+
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
+
+    - name: add user docker group
+      user:
+        name: devops
+        groups: docker
+        append: yes
+```
+![image](https://user-images.githubusercontent.com/52950376/236627628-24ff8d21-e6c7-43d0-adf3-aa0f4f70c968.png)
+![image](https://user-images.githubusercontent.com/52950376/236628588-647daf4e-ac04-46e7-853c-b85704b61ca0.png)
+
+
+wayshub-docker.yml
+```
+- become: true
+  gather_facts: false
+  hosts: appserver
+  tasks:
+    - name: pull image
+      docker_image:
+       name: nikymn/wayshub-frontend-16:latest
+       source: pull
+    - name: copy docker compose
+      copy:
+        src: /home/server/ansible/config/docker-compose.yml
+        dest: /home/devops
+    - name: running docker compose
+      command: docker compose up -d
+```
+
+docker-compose.yml
+```
+version: "3.8"
+services:
+   frontend:
+    container_name: wayshub-fe
+    image: nikymn/wayshub-frontend-16:latest
+    stdin_open: true
+    ports:
+      - 3000:3000
+```
+![image](https://user-images.githubusercontent.com/52950376/236635544-ac9031a0-5093-4438-9702-288ab840aedc.png)
+![image](https://user-images.githubusercontent.com/52950376/236635688-0c3d8cfa-d0dd-410e-a5de-4448c3c77bac.png)
+
+![image](https://user-images.githubusercontent.com/52950376/236635613-b1a71b81-7ec5-4ff6-b8db-6fa5029d9e99.png)
