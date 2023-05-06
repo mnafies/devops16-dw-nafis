@@ -16,3 +16,116 @@ python3 -m pip install --user ansible
 `sudo cp .local/bin/ansible /usr/local/bin`
 ![image](https://user-images.githubusercontent.com/52950376/236621717-24854864-d1be-4671-8d02-1cac9d22a563.png)
 
+![image](https://user-images.githubusercontent.com/52950376/236625006-89df53e0-a0ae-40c6-ae36-3f99a8b47dfe.png)
+
+
+```
+[defaults]
+inventory = Inventory
+private_key_file = ~/.ssh/id_rsa
+host_key_checking = false
+interpreter_python = auto_silent
+```
+
+```
+[all]
+103.49.239.40
+103.139.193.91
+103.23.199.42
+
+[appserver]
+103.49.239.40
+
+[gateway]
+103.139.193.91
+
+[monitoring]
+103.23.199.42
+
+[all:vars]
+ansible_user="nafis"
+ansible_pythone_interpreter=/usr/bin/python3
+```
+[add_user]
+
+![image](https://user-images.githubusercontent.com/52950376/236625768-86e4b7a3-bd00-486b-ba1a-483fb7f6355e.png)
+```
+- become: true
+  gather_facts: false
+  hosts: all      
+  vars:
+   - username: "devops"
+   - password: "$5$65Cdft2l3J/LIY7d$evc4M4CzKfvO4Xaht8VW7qXd7e4nUUeJO9wDIUaIVk5" #Nafis111
+
+  tasks:
+    - name: "Creating User"
+      ansible.builtin.user:
+        groups: sudo
+        name: "{{username}}"
+        password: "{{password}}"
+```
+![image](https://user-images.githubusercontent.com/52950376/236627226-34ca326c-7af6-415b-babd-c10e78cdad0d.png)
+
+![image](https://user-images.githubusercontent.com/52950376/236626350-925c44d0-f0aa-47dd-a60d-69f0f2d92c47.png)
+
+[appserver]
+
+```
+---
+- hosts: all
+  become: true
+  vars:
+    container_count: 4
+    default_container_name: docker
+    default_container_image: ubuntu
+    default_container_command: sleep 1d
+
+  tasks:
+    - name: Install aptitude
+      apt:
+        name: aptitude
+        state: latest
+        update_cache: true
+
+    - name: Install required system packages
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools
+        state: latest
+        update_cache: true
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: true
+
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
+
+    - name: add user docker group
+      user:
+        name: devops
+        groups: docker
+        append: yes
+```
+![image](https://user-images.githubusercontent.com/52950376/236627628-24ff8d21-e6c7-43d0-adf3-aa0f4f70c968.png)
+
+
