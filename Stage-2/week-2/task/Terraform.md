@@ -84,11 +84,10 @@ resource "idcloudhost_floating_ip" "ip-monitoring" {
 }
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236516100-5283a012-5479-4a64-9e61-7751f024bd3a.png)
-![image](https://user-images.githubusercontent.com/52950376/236516324-a81e81cb-84f2-4b9d-8c0d-f65ab018984b.png)
-![image](https://user-images.githubusercontent.com/52950376/236518818-960ed8d0-cf68-4f92-bd6a-72a79cfe3108.png)
-![image](https://user-images.githubusercontent.com/52950376/236518859-1892ec0e-fc2f-40f0-a8f3-f7646c70a707.png)
+![image](https://user-images.githubusercontent.com/52950376/236623514-e6ee0d5a-b95a-4220-91d8-08de4fb8aacd.png)
+![image](https://user-images.githubusercontent.com/52950376/236623532-c8a50e79-04f8-4444-8333-d61e4e73a665.png)
+![image](https://user-images.githubusercontent.com/52950376/236623542-9e59ed3a-9704-4535-b6cf-496cf903cdf7.png)
 
-![image](https://user-images.githubusercontent.com/52950376/236516687-6981b3df-c7f1-4bb9-930b-c49c0a364392.png)
 ![image](https://user-images.githubusercontent.com/52950376/236516503-9ed55cd1-658b-41f3-81c6-3e1c051c05e5.png)
 ![image](https://user-images.githubusercontent.com/52950376/236517119-69d07128-2485-49e6-9dd2-fa2c1abb1dc2.png)
 
