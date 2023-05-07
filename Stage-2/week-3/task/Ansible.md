@@ -129,6 +129,17 @@ install-docker.yml
 ![image](https://user-images.githubusercontent.com/52950376/236627628-24ff8d21-e6c7-43d0-adf3-aa0f4f70c968.png)
 ![image](https://user-images.githubusercontent.com/52950376/236628588-647daf4e-ac04-46e7-853c-b85704b61ca0.png)
 
+docker-compose.yml
+```
+version: "3.8"
+services:
+   frontend:
+    container_name: wayshub-fe
+    image: nikymn/wayshub-frontend-16:latest
+    stdin_open: true
+    ports:
+      - 3000:3000
+```
 
 wayshub-docker.yml
 ```
@@ -148,18 +159,12 @@ wayshub-docker.yml
       command: docker compose up -d
 ```
 
-docker-compose.yml
-```
-version: "3.8"
-services:
-   frontend:
-    container_name: wayshub-fe
-    image: nikymn/wayshub-frontend-16:latest
-    stdin_open: true
-    ports:
-      - 3000:3000
-```
 ![image](https://user-images.githubusercontent.com/52950376/236635544-ac9031a0-5093-4438-9702-288ab840aedc.png)
 ![image](https://user-images.githubusercontent.com/52950376/236635688-0c3d8cfa-d0dd-410e-a5de-4448c3c77bac.png)
-
 ![image](https://user-images.githubusercontent.com/52950376/236635613-b1a71b81-7ec5-4ff6-b8db-6fa5029d9e99.png)
+
+[gateway]
+rproxy.conf
+```
+
+```
