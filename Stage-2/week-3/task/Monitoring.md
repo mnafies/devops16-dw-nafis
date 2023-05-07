@@ -94,5 +94,5 @@ save dashboard
 ![image](https://user-images.githubusercontent.com/52950376/236690489-9094bff1-524d-400f-8f54-37cd840488d6.png)
 ![image](https://user-images.githubusercontent.com/52950376/236690547-e8b8b2fe-8b07-45cc-b7df-d9c4278b365f.png)
 
-![image](https://user-images.githubusercontent.com/52950376/236706628-8a70c446-ae0e-4e15-830d-d9de8d92761d.png)
+![image](https://user-images.githubusercontent.com/52950376/236707346-4eae319f-c762-4639-b534-89e02dfb36a7.png)
 
