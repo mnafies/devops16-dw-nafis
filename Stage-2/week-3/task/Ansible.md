@@ -43,7 +43,7 @@ interpreter_python = auto_silent
 103.23.199.42
 
 [all:vars]
-ansible_user="nafis"
+ansible_user="devops"
 ansible_pythone_interpreter=/usr/bin/python3
 ```
 [add_user]
