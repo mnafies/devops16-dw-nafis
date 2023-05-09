@@ -168,21 +168,19 @@ wayshub-docker.yml
 rproxy.conf
 ```
 server { 
-    server_name node-exporter-appserver.nafis.studentdumbways.my.id; 
+    server_name node-exporter-app.nafis.studentdumbways.my.id; 
     
     location / { 
              proxy_pass http://103.49.239.40:9100;
     }
 }
-
 server { 
-    server_name node-exporter-gateway.nafis.studentdumbways.my.id; 
+    server_name node-exporter-gate.nafis.studentdumbways.my.id; 
     
     location / { 
              proxy_pass http://103.139.193.91:9100
     }
 }
-
 server { 
     server_name prom.nafis.studentdumbways.my.id; 
     
@@ -190,7 +188,6 @@ server {
              proxy_pass http://103.23.199.42:9090;
     }
 }
-
 server { 
     server_name dashboard.nafis.studentdumbways.my.id; 
     
@@ -198,7 +195,6 @@ server {
              proxy_pass http://103.23.199.42:3000;
     }
 }
-
 server { 
     server_name nafis.studentdumbways.my.id; 
     
@@ -235,43 +231,7 @@ install-nginx.yml
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236684969-9969d45f-f46b-4163-9544-a8001c726a2b.png)
 ![image](https://user-images.githubusercontent.com/52950376/236684984-121136f0-9e5e-46d2-972a-8c267150ad2d.png)
-```
-server { 
-    server_name node-exporter-app.nafis.studentdumbways.my.id; 
-    
-    location / { 
-             proxy_pass http://103.49.239.40:9100;
-    }
-}
-server { 
-    server_name node-exporter-gate.nafis.studentdumbways.my.id; 
-    
-    location / { 
-             proxy_pass http://103.139.193.91:9100
-    }
-}
-server { 
-    server_name prom.nafis.studentdumbways.my.id; 
-    
-    location / { 
-             proxy_pass http://103.23.199.42:9090;
-    }
-}
-server { 
-    server_name dashboard.nafis.studentdumbways.my.id; 
-    
-    location / { 
-             proxy_pass http://103.23.199.42:3000;
-    }
-}
-server { 
-    server_name nafis.studentdumbways.my.id; 
-    
-    location / { 
-             proxy_pass http://103.49.239.40:3000;
-    }
-}
-```
+
 
 ![image](https://user-images.githubusercontent.com/52950376/236681655-21944770-dae0-43c5-aca4-58def5d3b7ed.png)
 ![image](https://user-images.githubusercontent.com/52950376/236685070-b3d2da23-d716-498d-abf4-dabe21b9e42c.png)
