@@ -44,9 +44,11 @@ Saya melakukan verifikasi apakah node-exporter sudah menjadi target prometheus d
 ![image](https://user-images.githubusercontent.com/52950376/236686586-52d444ba-c2ba-4f1a-8763-8facdbabd230.png)
 
 - cek target pada menu  Status > Targets
+- 
 ![image](https://user-images.githubusercontent.com/52950376/236686599-d3f866ad-3c29-4f8e-a420-9a2e026016a7.png)
 
 - jika sudah ada dns/ip server yang ditargetkan maka prometheus sudah terhubung dengan node-exporter
+- 
 ![image](https://user-images.githubusercontent.com/52950376/236686620-afed4c4e-820f-43c9-8e2b-6d792645a99c.png)
 
 
@@ -57,9 +59,11 @@ docker run -d -p 3000:3000 grafana/grafana
 ![image](https://user-images.githubusercontent.com/52950376/236686745-1c5c0b20-6ebd-4435-8309-96f03d25c888.png)
 
 Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan password default `admin`
+
 ![image](https://user-images.githubusercontent.com/52950376/236687076-2c338001-3eba-428e-b121-ee0278536ee9.png)
 
 # Langkah-langkah untuk menambahkan data source
+
 ![image](https://user-images.githubusercontent.com/52950376/236687188-ada1d6e1-e4b2-4058-9520-0820ca830c3d.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236687255-df4d5ed9-6017-4406-9d94-3dd2e06f2b06.png)
@@ -73,6 +77,7 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 ![image](https://user-images.githubusercontent.com/52950376/236687557-f0f441c8-bae8-491c-a73b-fda8532ec4d9.png)
 
 # Langkah-langkah untuk setup dashboard
+
 ![image](https://user-images.githubusercontent.com/52950376/236687671-2f4f9495-17dc-4787-9f06-09789b235226.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236687694-9e204517-b5ae-4bc9-8b51-1de0f61ca587.png)
