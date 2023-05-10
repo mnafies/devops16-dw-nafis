@@ -1,10 +1,6 @@
 https://minikube.sigs.k8s.io/docs/start/
 
-![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/a5a8a1a7-6f42-4e3c-abae-4bd3e4c1b0c4)
-```
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-```
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/c870dfd0-ef7b-4b2f-aba1-6e1dca2af68f)
 
 `minikube start`
 ![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/fa511f62-fde1-4dce-82fd-f80e8ca9ccd9)
