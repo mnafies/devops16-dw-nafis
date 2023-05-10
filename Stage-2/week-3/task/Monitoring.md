@@ -1,19 +1,23 @@
-[node-exporter appserver]
+Pada `server appserver` saya menjalankan image `prom/node-exporter` dengan docker pada port 9100
+
 ```
 docker run -d -p 9100:9100 prom/node-exporter
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236685930-a7d37629-f14f-4623-b8dc-ad7b860aed1c.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236685867-b725f85c-291a-4737-bf94-fc98fd80a559.png)
 
-[node-exporter gateway]
+Pada `server gateway` saya menjalankan image `prom/node-exporter` dengan docker pada port 9100
+
 ```
 docker run -d -p 9100:9100 prom/node-exporter
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236685942-23072a5e-78fd-48e1-b2ac-e23b8b4377a6.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236685986-f4b9bb4d-6a3a-414f-a4a0-fe1c2166b11c.png)
 
-[prometheus]
-prometheus.yml
+Saya membuat file `prometheus.yml` untuk kebutuhan prometheus di `server monitoring`, tujuannya untuk menambahkan target node-exporter dimana metric nya akan diterjemahkan oleh prometheus
+
 ```
 scrape_configs:
 - job_name: grafana   
@@ -24,12 +28,17 @@ scrape_configs:
     - node-exporter-gate.nafis.studentdumbways.my.id
 ```
 
+Pada `server monitoring` saya menjalankan image `prom/prometheus` dengan docker pada port 9090
+
 ```
 docker run -d -p 9090:9090 -v ~/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236686701-76582220-9915-42e8-838d-deb1e504ee05.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236686586-52d444ba-c2ba-4f1a-8763-8facdbabd230.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236686599-d3f866ad-3c29-4f8e-a420-9a2e026016a7.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236686620-afed4c4e-820f-43c9-8e2b-6d792645a99c.png)
 
 
