@@ -100,30 +100,38 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236689014-a8af0ef0-4006-4fab-8b82-5deaddf074dd.png)
 
-save dashboard
+### save dashboard
+
 ![image](https://user-images.githubusercontent.com/52950376/236689059-75b4545d-62e9-4f6f-9a62-8a1cef69d736.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236689073-f540ce11-a764-440c-9348-f85b3680f5c0.png)
 
-[alert notification]
+# Langkah-langkah untuk setup alert
 ![image](https://user-images.githubusercontent.com/52950376/236691207-d1c80f19-7610-4df5-9a57-778fc072cb20.png)
-
 
 ![image](https://user-images.githubusercontent.com/52950376/236689675-fb9e9ef6-13ce-4e27-b052-56cfa60e9864.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236689893-646739c4-6e23-45b7-b62c-9a0e18722519.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236689945-5866019f-d1e2-4519-9aa5-e4d773cab027.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236689962-7cfb8c2e-eda3-4bf9-90b7-866b8c945448.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236689995-f17bbda8-d676-4ed6-bf89-8fc15e5d3868.png)
 
 
-- CPU Above 20%
+- Alert CPU Above 20%
 ![image](https://user-images.githubusercontent.com/52950376/236689644-5a20cabd-c375-4795-9641-3b55279be1d1.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236690391-93f966aa-8826-4d39-8d5e-b48f51875c31.png)
 
-- RAM Above 75%
+- Alert RAM Above 75%
 ![image](https://user-images.githubusercontent.com/52950376/236690489-9094bff1-524d-400f-8f54-37cd840488d6.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236690547-e8b8b2fe-8b07-45cc-b7df-d9c4278b365f.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236707346-4eae319f-c762-4639-b534-89e02dfb36a7.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236710913-eeec619a-dcee-4842-9908-942e24804056.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236710779-422e350d-40ef-42a4-bdbd-eb5efb061901.png)
