@@ -117,7 +117,6 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 
 ![image](https://user-images.githubusercontent.com/52950376/236689962-7cfb8c2e-eda3-4bf9-90b7-866b8c945448.png)
 
-![image](https://user-images.githubusercontent.com/52950376/236689995-f17bbda8-d676-4ed6-bf89-8fc15e5d3868.png)
 
 ### Langkah-langkah menambahkan Alert rules
 
