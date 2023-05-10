@@ -56,11 +56,6 @@ interpreter_python = auto_silent
 `Inventory`
 
 ```
-[all]
-103.49.239.40
-103.139.193.91
-103.23.199.42
-
 [appserver]
 103.49.239.40
 
