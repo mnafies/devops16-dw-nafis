@@ -119,6 +119,8 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 
 ![image](https://user-images.githubusercontent.com/52950376/236689995-f17bbda8-d676-4ed6-bf89-8fc15e5d3868.png)
 
+### Langkah-langkah menambahkan Alert rules
+
 - Alert CPU Above 20%
 ![image](https://user-images.githubusercontent.com/52950376/236689644-5a20cabd-c375-4795-9641-3b55279be1d1.png)
 
