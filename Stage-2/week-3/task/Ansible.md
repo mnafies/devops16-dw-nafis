@@ -82,6 +82,7 @@ untuk password disini saya menggunakan metode enskripsi dengan menggunakan `whoi
 
 
 - hosts : semua server
+
 `adduser.yml`
 ```
 - become: true
@@ -104,6 +105,7 @@ untuk password disini saya menggunakan metode enskripsi dengan menggunakan `whoi
 
 
 - hosts : semua server
+
 `install-docker.yml`
 ```
 ---
@@ -180,6 +182,7 @@ services:
 #### [appserver]
 
 - hosts : appserver
+
 `wayshub-docker.yml`
 ```
 - become: true
@@ -246,6 +249,7 @@ server {
 ```
 
 - hosts : gateway
+
 `install-nginx.yml`
 ```
 ---
