@@ -1,5 +1,8 @@
-`python3 -m pip -V`
-
+Untuk instalasi ansible dibutuhkan python pip, gunakan command dibawah ini untuk verifikasi python pada linux ubuntu
+```
+python3 -m pip -V
+```
+Jika python sudah ada selanjutnya menambahkan library ansible terlebih dahulu dengan command dibawah ini
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py --user
@@ -7,17 +10,40 @@ python3 get-pip.py --user
 
 ![image](https://user-images.githubusercontent.com/52950376/236621563-c9d8f97a-7762-429c-bf13-ec9458eb02f8.png)
 
+Selanjutnya instalasi ansible dengan command dibawah ini 
 ```
 python3 -m pip install --user ansible
 ```
+
 ![image](https://user-images.githubusercontent.com/52950376/236621657-367dfc2f-0d77-479f-a98c-ebabaa874a36.png)
 
-`ansible --version`
-`sudo cp .local/bin/ansible /usr/local/bin`
+Setelah selesai lakukan verifikasi ansible dengan command dibawah ini
+```
+ansible --version
+```
+
+Jika verifikasi belum menunjukan adanya ansible bisa lakukan cara copy ansible ke directory `/usr/local/bin`
+
+```
+sudo cp .local/bin/ansible /usr/local/bin
+```
+
 ![image](https://user-images.githubusercontent.com/52950376/236621717-24854864-d1be-4671-8d02-1cac9d22a563.png)
+
+selanjutnya pada directory ansible saya membuat file 
+
+- `ansible.cfg` untuk konfigurasi ansible 
+- `Inventory` untuk data server
+- `[name_file].yml` untuk konfigurasi ansible-playbook
+
+kemudian gunakan perintah dibawah ini untuk menjalankan ansible playbook
+```
+ansible-playbook [name_file].yml
+```
 
 ![image](https://user-images.githubusercontent.com/52950376/236625006-89df53e0-a0ae-40c6-ae36-3f99a8b47dfe.png)
 
+`ansible.cfg`
 
 ```
 [defaults]
@@ -26,6 +52,8 @@ private_key_file = ~/.ssh/id_rsa
 host_key_checking = false
 interpreter_python = auto_silent
 ```
+
+`Inventory`
 
 ```
 [all]
@@ -48,7 +76,13 @@ ansible_pythone_interpreter=/usr/bin/python3
 ```
 [add_user]
 
+untuk password disini saya menggunakan metode enskripsi dengan menggunakan `whois`
+
 ![image](https://user-images.githubusercontent.com/52950376/236625768-86e4b7a3-bd00-486b-ba1a-483fb7f6355e.png)
+
+
+- hosts : semua server
+`adduser.yml`
 ```
 - become: true
   gather_facts: false
@@ -68,8 +102,9 @@ ansible_pythone_interpreter=/usr/bin/python3
 
 ![image](https://user-images.githubusercontent.com/52950376/236626350-925c44d0-f0aa-47dd-a60d-69f0f2d92c47.png)
 
-[appserver]
-install-docker.yml
+
+- hosts : semua server
+`install-docker.yml`
 ```
 ---
 - hosts: all
@@ -127,9 +162,10 @@ install-docker.yml
         append: yes
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236627628-24ff8d21-e6c7-43d0-adf3-aa0f4f70c968.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236628588-647daf4e-ac04-46e7-853c-b85704b61ca0.png)
 
-docker-compose.yml
+file `docker-compose.yml` untuk kebutuhan docker compose yang nantinya akan di copy melalui ansible
 ```
 version: "3.8"
 services:
@@ -141,7 +177,10 @@ services:
       - 3000:3000
 ```
 
-wayshub-docker.yml
+#### [appserver]
+
+- hosts : appserver
+`wayshub-docker.yml`
 ```
 - become: true
   gather_facts: false
@@ -160,12 +199,14 @@ wayshub-docker.yml
 ```
 
 ![image](https://user-images.githubusercontent.com/52950376/236635544-ac9031a0-5093-4438-9702-288ab840aedc.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236635688-0c3d8cfa-d0dd-410e-a5de-4448c3c77bac.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236635613-b1a71b81-7ec5-4ff6-b8db-6fa5029d9e99.png)
 
-[gateway]
+#### [gateway]
 
-rproxy.conf
+file `rproxy.conf` untuk kebutuhan nginx yang nantinya akan di copy melalui ansible
 ```
 server { 
     server_name node-exporter-app.nafis.studentdumbways.my.id; 
@@ -204,7 +245,8 @@ server {
 }
 ```
 
-install-nginx.yml
+- hosts : gateway
+`install-nginx.yml`
 ```
 ---
 - become: true
@@ -230,10 +272,11 @@ install-nginx.yml
         state: reloaded
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236684969-9969d45f-f46b-4163-9544-a8001c726a2b.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236684984-121136f0-9e5e-46d2-972a-8c267150ad2d.png)
 
-
 ![image](https://user-images.githubusercontent.com/52950376/236681655-21944770-dae0-43c5-aca4-58def5d3b7ed.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236685070-b3d2da23-d716-498d-abf4-dabe21b9e42c.png)
 
 
