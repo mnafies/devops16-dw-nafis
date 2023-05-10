@@ -12,6 +12,10 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 `minikube kubectl -- get po -A`
 ![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/6dc17195-6a2d-4d0d-8a06-529525a85b44)
 
+`minikube dashboard`
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/c2678a17-d4f2-44f2-8104-c2504a3b8fd2)
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/a293c5c6-1551-4364-b702-3c6cbe771270)
+
 frontend.yml
 ```
 apiVersion: apps/v1
