@@ -16,7 +16,9 @@ docker run -d -p 9100:9100 prom/node-exporter
 
 ![image](https://user-images.githubusercontent.com/52950376/236685986-f4b9bb4d-6a3a-414f-a4a0-fe1c2166b11c.png)
 
-Saya membuat file `prometheus.yml` untuk kebutuhan prometheus di `server monitoring`, tujuannya untuk menambahkan target node-exporter dimana metric nya akan diterjemahkan oleh prometheus
+Saya membuat file `prometheus.yml` untuk kebutuhan prometheus di `server monitoring`, 
+
+tujuannya untuk menambahkan target node-exporter dimana metric nya akan diterjemahkan oleh prometheus
 
 ```
 scrape_configs:
@@ -35,30 +37,44 @@ docker run -d -p 9090:9090 -v ~/prometheus.yml:/etc/prometheus/prometheus.yml pr
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236686701-76582220-9915-42e8-838d-deb1e504ee05.png)
 
+Saya melakukan verifikasi apakah node-exporter sudah menjadi target prometheus dengan langkah dibawah ini
+
+- masuk pada dns prometheus
+
 ![image](https://user-images.githubusercontent.com/52950376/236686586-52d444ba-c2ba-4f1a-8763-8facdbabd230.png)
 
+- cek target pada menu  Status > Targets
 ![image](https://user-images.githubusercontent.com/52950376/236686599-d3f866ad-3c29-4f8e-a420-9a2e026016a7.png)
 
+- jika sudah ada dns/ip server yang ditargetkan maka prometheus sudah terhubung dengan node-exporter
 ![image](https://user-images.githubusercontent.com/52950376/236686620-afed4c4e-820f-43c9-8e2b-6d792645a99c.png)
 
 
-[grafana]
+Pada `server monitoring` saya menjalankan image `grafana/grafana` dengan docker pada port 9090
 ```
 docker run -d -p 3000:3000 grafana/grafana
 ```
 ![image](https://user-images.githubusercontent.com/52950376/236686745-1c5c0b20-6ebd-4435-8309-96f03d25c888.png)
+
+Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan password default `admin`
 ![image](https://user-images.githubusercontent.com/52950376/236687076-2c338001-3eba-428e-b121-ee0278536ee9.png)
 
-[data source]
+# Langkah-langkah untuk menambahkan data source
 ![image](https://user-images.githubusercontent.com/52950376/236687188-ada1d6e1-e4b2-4058-9520-0820ca830c3d.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687255-df4d5ed9-6017-4406-9d94-3dd2e06f2b06.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687459-40d326d7-7225-48f1-b77d-e854e38f6696.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687477-ffc81d33-03d3-44ab-8eb6-3a2d19fbe650.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687535-9f4ca628-60b4-40f6-8a2a-ce472c1d7a12.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687557-f0f441c8-bae8-491c-a73b-fda8532ec4d9.png)
 
-[dashboard]
+# Langkah-langkah untuk setup dashboard
 ![image](https://user-images.githubusercontent.com/52950376/236687671-2f4f9495-17dc-4787-9f06-09789b235226.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236687694-9e204517-b5ae-4bc9-8b51-1de0f61ca587.png)
 
 - CPU
