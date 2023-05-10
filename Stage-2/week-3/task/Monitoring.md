@@ -52,7 +52,7 @@ Saya melakukan verifikasi apakah node-exporter sudah menjadi target prometheus d
 ![image](https://user-images.githubusercontent.com/52950376/236686620-afed4c4e-820f-43c9-8e2b-6d792645a99c.png)
 
 
-Pada `server monitoring` saya menjalankan image `grafana/grafana` dengan docker pada port 9090
+Pada `server monitoring` saya menjalankan image `grafana/grafana` dengan docker pada port 3000
 ```
 docker run -d -p 3000:3000 grafana/grafana
 ```
