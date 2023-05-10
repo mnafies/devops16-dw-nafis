@@ -104,7 +104,12 @@ terraform init
 
 ![image](https://user-images.githubusercontent.com/52950376/236516100-5283a012-5479-4a64-9e61-7751f024bd3a.png)
 
-setelah itu gunakan command dibawah ini untuk menjalakan terraform dengan konfigurasi yang sudah ada
+Sebelum membangun server bisa menggunakan command dibawah ini untuk mensimulasikan terlebih dahulu
+```
+terraform plan
+```
+
+Selanjutnya untuk membangun server gunakan command dibawah ini untuk menjalakan terraform dengan konfigurasi yang sudah ada
 ```
 terraform apply
 ```
