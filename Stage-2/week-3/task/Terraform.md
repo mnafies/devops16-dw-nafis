@@ -10,7 +10,9 @@ sudo apt update && sudo apt install terraform
 ![image](https://user-images.githubusercontent.com/52950376/236508484-8da8ff8c-fc65-4f84-8db2-6e47405d9c21.png)
 
 Verifikasi dengan command 
-```terraform```
+```
+terraform
+```
 ![image](https://user-images.githubusercontent.com/52950376/236508663-6da391aa-b1d4-482f-bb98-a7589dde6769.png)
 
 kemudian saya membuat folder dan file `main.tf` untuk configurasi terraform
@@ -95,12 +97,17 @@ resource "idcloudhost_floating_ip" "ip-monitoring" {
 }
 ```
 
-setelah membuat file `main.tf` 
+setelah membuat file `main.tf` gunakan command dibawah ini untuk insiasi terraform
+```
+terraform init
+```
 
 ![image](https://user-images.githubusercontent.com/52950376/236516100-5283a012-5479-4a64-9e61-7751f024bd3a.png)
 
-setelah itu gunakan command `terraform apply` untuk menjalakan terraform dengan konfigurasi yang sudah ada
-
+setelah itu gunakan command dibawah ini untuk menjalakan terraform dengan konfigurasi yang sudah ada
+```
+terraform apply
+```
 ![image](https://user-images.githubusercontent.com/52950376/236623514-e6ee0d5a-b95a-4220-91d8-08de4fb8aacd.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236623532-c8a50e79-04f8-4444-8333-d61e4e73a665.png)
