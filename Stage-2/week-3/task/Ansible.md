@@ -1,4 +1,4 @@
-Untuk instalasi ansible dibutuhkan python pip, gunakan command dibawah ini untuk verifikasi python pada linux ubuntu
+Instalasi ansible dibutuhkan python pip, gunakan command dibawah ini untuk verifikasi python pada linux ubuntu
 ```
 python3 -m pip -V
 ```
