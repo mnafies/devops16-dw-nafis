@@ -44,11 +44,11 @@ Saya melakukan verifikasi apakah node-exporter sudah menjadi target prometheus d
 ![image](https://user-images.githubusercontent.com/52950376/236686586-52d444ba-c2ba-4f1a-8763-8facdbabd230.png)
 
 - cek target pada menu  Status > Targets
-- 
+
 ![image](https://user-images.githubusercontent.com/52950376/236686599-d3f866ad-3c29-4f8e-a420-9a2e026016a7.png)
 
 - jika sudah ada dns/ip server yang ditargetkan maka prometheus sudah terhubung dengan node-exporter
-- 
+
 ![image](https://user-images.githubusercontent.com/52950376/236686620-afed4c4e-820f-43c9-8e2b-6d792645a99c.png)
 
 
