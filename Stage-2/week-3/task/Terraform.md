@@ -46,7 +46,7 @@ resource "idcloudhost_vm" "nafis-appserver" {
     username = "nafis"
     initial_password = "Katasand1" # Combination of Uppercase, Lowercase & Numbers
     billing_account_id =  # Billing ID from idcloudhost.com
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDesR8GxzKHeswK9lwf5+ZwmqKhhiOFwxf2RaNN9Ih5hnCImNdg55xBzIS1hWsz3svU4gia+DZHRAC99MWIZr+RlTcIsEd02BgSHGUj63UPuJCOGz1vCvhp38pKtxZOAL0e0Kb3TRUvGGP52rs3eCQ37IBErEYamcUyX1vVovQwmB5GqarRl1cSxmReioOJgBIoqsbGiRCuYztVOCFSLq1bxeSTJM6gF/Kcmu6cE6wuhD6q/989dhdX1SHwBU04lJvKh2zRCzz+eiJgGkYMErNbAAAUl/qkKtcvGmSKMT2ObGQ8hdXLVEIOyPesQ2PvJGC7IprPzk1D/pcTIwD/DGTw8/5/tEnYFrODWfTnvq0zW0GfnMAk1lfHugwn265dYhrHOjQ3gDbmTgIbe5Ltg4VKRqTVZDAUY52KD7hrSEx7GCacSUUcmCZ2TWFnBMRHYqqM8d9GWhZPHVBjhLbZSed9C9Jb/N07wvoPVVVZ01Rej555L7LC5Aqu1OWMyCxPDls= server@server"
+    public_key = "ssh-rsa xxxxx server@server"
     backup = false
 }
 
@@ -60,7 +60,7 @@ resource "idcloudhost_vm" "nafis-gateway" {
     username = "nafis"
     initial_password = "Katasand1" # Combination of Uppercase, Lowercase & Numbers
     billing_account_id =  # Billing ID from idcloudhost.com
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDesR8GxzKHeswK9lwf5+ZwmqKhhiOFwxf2RaNN9Ih5hnCImNdg55xBzIS1hWsz3svU4gia+DZHRAC99MWIZr+RlTcIsEd02BgSHGUj63UPuJCOGz1vCvhp38pKtxZOAL0e0Kb3TRUvGGP52rs3eCQ37IBErEYamcUyX1vVovQwmB5GqarRl1cSxmReioOJgBIoqsbGiRCuYztVOCFSLq1bxeSTJM6gF/Kcmu6cE6wuhD6q/989dhdX1SHwBU04lJvKh2zRCzz+eiJgGkYMErNbAAAUl/qkKtcvGmSKMT2ObGQ8hdXLVEIOyPesQ2PvJGC7IprPzk1D/pcTIwD/DGTw8/5/tEnYFrODWfTnvq0zW0GfnMAk1lfHugwn265dYhrHOjQ3gDbmTgIbe5Ltg4VKRqTVZDAUY52KD7hrSEx7GCacSUUcmCZ2TWFnBMRHYqqM8d9GWhZPHVBjhLbZSed9C9Jb/N07wvoPVVVZ01Rej555L7LC5Aqu1OWMyCxPDls= server@server"
+    public_key = "ssh-rsa xxxxx server@server"
     backup = false
 }
 
@@ -74,7 +74,7 @@ resource "idcloudhost_vm" "nafis-monitoring" {
     username = "nafis"
     initial_password = "Katasand1" # Combination of Uppercase, Lowercase & Numbers
     billing_account_id =  # Billing ID from idcloudhost.com
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDesR8GxzKHeswK9lwf5+ZwmqKhhiOFwxf2RaNN9Ih5hnCImNdg55xBzIS1hWsz3svU4gia+DZHRAC99MWIZr+RlTcIsEd02BgSHGUj63UPuJCOGz1vCvhp38pKtxZOAL0e0Kb3TRUvGGP52rs3eCQ37IBErEYamcUyX1vVovQwmB5GqarRl1cSxmReioOJgBIoqsbGiRCuYztVOCFSLq1bxeSTJM6gF/Kcmu6cE6wuhD6q/989dhdX1SHwBU04lJvKh2zRCzz+eiJgGkYMErNbAAAUl/qkKtcvGmSKMT2ObGQ8hdXLVEIOyPesQ2PvJGC7IprPzk1D/pcTIwD/DGTw8/5/tEnYFrODWfTnvq0zW0GfnMAk1lfHugwn265dYhrHOjQ3gDbmTgIbe5Ltg4VKRqTVZDAUY52KD7hrSEx7GCacSUUcmCZ2TWFnBMRHYqqM8d9GWhZPHVBjhLbZSed9C9Jb/N07wvoPVVVZ01Rej555L7LC5Aqu1OWMyCxPDls= server@server"
+    public_key = "ssh-rsa xxxxx server@server"
     backup = false
 }
 
