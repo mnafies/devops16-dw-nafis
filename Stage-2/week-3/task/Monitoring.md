@@ -109,9 +109,18 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 # Langkah-langkah untuk setup alert
 ![image](https://user-images.githubusercontent.com/52950376/236691207-d1c80f19-7610-4df5-9a57-778fc072cb20.png)
 
-![image](https://user-images.githubusercontent.com/52950376/236689675-fb9e9ef6-13ce-4e27-b052-56cfa60e9864.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236689893-646739c4-6e23-45b7-b62c-9a0e18722519.png)
+
+### Token dan chat ID telegram
+
+https://t.me/get_id_bot
+
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/fb4101c3-60d5-45cc-b651-3206ad20e2bf)
+
+https://t.me/BotFather
+
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/168f21d9-1835-4ea1-97a0-a21679493ab5)
 
 ![image](https://user-images.githubusercontent.com/52950376/236689945-5866019f-d1e2-4519-9aa5-e4d773cab027.png)
 
@@ -122,10 +131,14 @@ Selanjutnya saya mengakses dashboard grafana pada browser dengan username dan pa
 - Alert CPU Above 20%
 ![image](https://user-images.githubusercontent.com/52950376/236689644-5a20cabd-c375-4795-9641-3b55279be1d1.png)
 
+![image](https://user-images.githubusercontent.com/52950376/236689675-fb9e9ef6-13ce-4e27-b052-56cfa60e9864.png)
+
 ![image](https://user-images.githubusercontent.com/52950376/236690391-93f966aa-8826-4d39-8d5e-b48f51875c31.png)
 
 - Alert RAM Above 75%
 ![image](https://user-images.githubusercontent.com/52950376/236690489-9094bff1-524d-400f-8f54-37cd840488d6.png)
+
+![image](https://user-images.githubusercontent.com/52950376/236689675-fb9e9ef6-13ce-4e27-b052-56cfa60e9864.png)
 
 ![image](https://user-images.githubusercontent.com/52950376/236690547-e8b8b2fe-8b07-45cc-b7df-d9c4278b365f.png)
 
