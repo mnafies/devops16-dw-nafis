@@ -120,7 +120,7 @@ https://t.me/get_id_bot
 
 https://t.me/BotFather
 
-![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/168f21d9-1835-4ea1-97a0-a21679493ab5)
+![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/306f7042-588b-4954-b095-cc4e5728f591)
 
 ![image](https://user-images.githubusercontent.com/52950376/236689945-5866019f-d1e2-4519-9aa5-e4d773cab027.png)
 
