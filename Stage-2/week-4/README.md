@@ -96,6 +96,6 @@ Jalankan service `frontend` dengan command dibawah ini
 ```
 minikube service frontend
 ```
-![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/dece6dd0-9114-477f-a77e-0727b7190a8c)
+
 
 ![image](https://github.com/nikymn/devops16-dw-nafis/assets/52950376/3f1d29ee-82b4-4c93-822b-d04ff9e1c8e0)
