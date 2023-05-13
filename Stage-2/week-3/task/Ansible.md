@@ -231,6 +231,7 @@ server {
     server_name dashboard.nafis.studentdumbways.my.id; 
     
     location / { 
+             proxy_set_header Host dashboard.nafis.studentdumbways.my.id;
              proxy_pass http://103.23.199.42:3000;
     }
 }
