@@ -1,3 +1,9 @@
+# Kelompok 1
+Anggota :
+
+-M. Yayang Setiawan
+-Muhamad Nafis
+
 ## Task
 
 - [Docker](https://github.com/myayangs/DevOps16-dw-myyngstwn/tree/dd7dfcbf8bf8ece2bd86a7bec41d58b52cdc6fd0/Stage%202/Task%20Day%203)
