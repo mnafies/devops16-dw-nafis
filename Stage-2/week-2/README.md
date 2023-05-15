@@ -1,9 +1,9 @@
 # Kelompok 1
 Anggota :
 
--M. Yayang Setiawan
+- M. Yayang Setiawan
 
--Muhamad Nafis
+- Muhamad Nafis
 
 ## Task
 
