@@ -2,7 +2,7 @@
 
 ## Stage 1
 - [Day 1 (DevOps Fundamental)](./Stage-1/day-1/)
-- [Day 2 (Networking & Linux Basics](./Stage-1/day-2/)
+- [Day 2 (Networking & Linux Basics)](./Stage-1/day-2/)
 - [Day 3 (Application in Server)](./Stage-1/day-3/)
 - [Day 5 (Manage Server w/ Terminal)](./Stage-1/day-6/)
 - [Day 6 (Web Server & Load Balancing)](./Stage-1/day-7/) 
